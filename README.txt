@@ -1,121 +1,61 @@
-# NLP Toolkit Web App
+# 🚀 AI-Powered NLP Toolkit Web App
 
-A simple **Natural Language Processing (NLP) Web Application** built with **Streamlit**, **spaCy**, and **Sumy**.
-The app provides useful NLP tools such as **Named Entity Recognition (NER)** and **Text Summarization** through a simple and interactive web interface.
+An advanced **Natural Language Processing (NLP) Suite** built with **Streamlit**, **spaCy**, and **Hugging Face Transformers**.
+This app provides high-performance NLP tools, including **Named Entity Recognition (NER)** and a **Dual-Mode Text Summarizer** (Traditional & AI-based).
 
 ---
 
-## 🚀 Features
+## ✨ Features
 
 ### 1️⃣ Named Entity Recognition (NER)
+* **Deep Analysis**: Detects and highlights entities in English text.
+* **Categories**: Automatically identifies People, Locations, Organizations, Dates, and more.
+* **Visual Interface**: Uses **spaCy's DisplaCy** for beautiful, interactive entity rendering.
 
-* Detects entities in English text.
-* Identifies:
-
-  * People
-  * Locations
-  * Organizations
-  * Dates
-  * Other named entities
-* Uses **spaCy NLP model**.
-
-### 2️⃣ Text Summarization
-
-* Automatically summarizes long text.
-* Multiple summarization algorithms:
-
-  * LSA
-  * Luhn
-  * LexRank
-  * TextRank
-* Adjustable number of summary sentences.
+### 2️⃣ Dual-Mode Text Summarization (New! ⚡)
+Now supports two types of summarization to fit all needs:
+* **Abstractive Summarization (AI)**: Uses the state-of-the-art **BART (Large-CNN)** model to understand the context and rewrite a human-like summary.
+* **Extractive Summarization (Statistical)**: Offers multiple classic algorithms:
+    * **LSA, Luhn, LexRank, and TextRank**.
+* **Full Control**: Adjustable summary length (sentences for extractive / word count for BART).
 
 ---
 
 ## 🛠️ Tech Stack
 
 * **Python**
-* **Streamlit** – Web interface
-* **spaCy** – NLP processing
-* **Sumy** – Text summarization algorithms
-* **NLTK** – Tokenization support
+* **Streamlit** – Modern Web UI.
+* **spaCy** – Industrial-strength NLP.
+* **Hugging Face (Transformers)** – BART model for Abstractive Summarization.
+* **Sumy** – Statistical summarization library.
+* **PyTorch** – Deep learning backend.
 
 ---
 
-## 📦 Installation
+## 📦 Installation & Setup
 
 ### 1️⃣ Clone the repository
-
-bash
-git clone https://github.com/your-username/NLP-Toolkit-App.git
+```bash
+git clone [https://github.com/dhk-12/NLP-Toolkit-App.git]
 cd NLP-Toolkit-App
 
-
 ### 2️⃣ Install dependencies
-
-bash
+```bash
 pip install -r requirements.txt
 
-### 3️⃣ Download spaCy language model
-
-bash
-python -m spacy download en_core_web_sm
-
-
----
-
-## ▶️ Run the App
-
-Start the Streamlit application:
-
+### 3️⃣ Run the application
+```bash
 streamlit run app.py
 
-Then open the browser at:
-
-http://localhost:8501
-
 ---
 
-## 📷 App Interface
+## 📷 App Modules
 
-The application contains two main tools:
-
-| Tool                     | Description                              |
-| ------------------------ | ---------------------------------------- |
-| Named Entity Recognition | Detects entities in text                 |
-| Text Summarization       | Generates a short summary from long text |
-
----
-
-## 📁 Project Structure
-
-NLP-Toolkit-App
-│
-├── app.py
-├── requirements.txt
-├── README.md
-└── .gitignore
-
----
-
-## 💡 Example Use Cases
-
-* Analyzing text documents
-* Extracting entities from articles
-* Summarizing long reports
-* NLP learning and experimentation
-
----
-
-## 📈 Future Improvements
-
-Possible features to add:
-
-* Sentiment Analysis
-* Keyword Extraction
-* Language Detection
-* Multi-language support
-* File upload (PDF / TXT)
+| Feature | Technology | Description |
+| :--- | :--- | :--- |
+| **NER Analysis** | spaCy (en_core_web_sm) | Visual extraction of named entities. |
+| **AI Summarization** | BART (Abstractive) | Generates new sentences to summarize text. |
+| **Classic Summarization**| LSA / TextRank (Extractive) | Selects the most important original sentences. |
 
 ---
 
@@ -123,4 +63,6 @@ Possible features to add:
 
 Developed by **Hossam Khaled**
 
-If you like this project, consider giving it a ⭐ on GitHub.
+> **Note**: The first time you run the AI Summarizer, the app will download the BART model (~1.6GB). Subsequent runs will be much faster due to local caching.
+
+If you find this toolkit useful, please give it a ⭐ on GitHub!
