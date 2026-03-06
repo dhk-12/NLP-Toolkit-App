@@ -60,9 +60,7 @@ streamlit run app.py
 ---
 
 ## 👨‍💻 Author
-
 Developed by **Hossam Khaled**
+If you find this toolkit useful, please give it a ⭐ on GitHub!
 
 > **Note**: The first time you run the AI Summarizer, the app will download the BART model (~1.6GB). Subsequent runs will be much faster due to local caching.
-
-If you find this toolkit useful, please give it a ⭐ on GitHub!
